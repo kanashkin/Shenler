@@ -14,5 +14,65 @@
 
 /* Header */
 .header {
-    height: 248px;
+    border-bottom: 10px solid rgba(228, 45, 36, 1);
 }
+.header-title {
+    width: 100%;
+    height: 80px;
+    padding-top: 37px;
+    background: #ECECEC;
+}
+
+.header-title h4 {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.header-info {
+    position: relative;
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-address {
+    margin-top: 20px;
+    color: #7E7E7E;
+    font-size: 18px;
+}
+
+.header-address-title {
+    line-height: 21px;
+    font-weight: 500;
+}
+
+.header-address-info {
+    line-height: 21px;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+.header-schedule, .header-email, .header-phones {
+    font-weight: 400;
+    font-size: 26px;
+    color: #000;
+    line-height: 30.47px;
+}
+
+.header-schedule-title {
+    font-weight: 600;
+}
+
+.header-schedule-info, .header-phone-2 {
+    margin-top: 5px;
+}
+
+.header-social {
+    display: flex;
+    gap: 30px;
+    align-items: end;
+}
+
