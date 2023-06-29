@@ -17,6 +17,11 @@ img {
     margin: 0 auto;
 }
 
+.promo {
+    position: relative;
+    padding: 70px 0 100px 0;
+}
+
 /* Common */
 .page-search {
     width: 460px;
@@ -36,6 +41,39 @@ img {
     background-repeat: no-repeat;
     background-position: 423px center;
 }
+
+.page-wrapper {
+    display: flex;
+    gap: 160px;
+}
+
+.page-text-block {
+    max-width: 840px;
+}
+
+.page-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46.88px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.page-descr-block {
+    margin-top: 30px;
+}
+
+.page-descr:first-child {
+    margin-top: 0;
+}
+
+.page-descr {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30.47px;
+    color: #000;
+}
+
 
 /* Header */
 .header {
@@ -376,6 +414,9 @@ li a {
     font-size: 22.4px;
     line-height: 26.25px;
 }
+
+/* About */
+
 
 
 
