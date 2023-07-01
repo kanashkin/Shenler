@@ -417,6 +417,120 @@ li a {
 
 /* About */
 
+/* Cert */
+.cert {
+    height: 610px;
+    background: #F9F9F9;
+    padding-top: 90px;
+}
+
+.cert-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46.88px;
+    text-transform: uppercase;
+}
+
+.cert-descr {
+    margin-top: 20px;
+    max-width: 501px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30.47px;
+}
+
+.cert-nav {
+    margin-top: 50px;
+}
+
+.cert-nav-item {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+    text-transform: uppercase;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.cert-nav-item:first-child {
+    margin-top: 0;
+}
+
+.cert-nav-item:hover {
+    color: rgba(228, 45, 36, 1);
+}
+
+.cert-nav-item svg path {
+    transition: .3s ease;
+}
+
+.cert-nav-item:hover svg path {
+    stroke: rgba(228, 45, 36, 1);
+}
+
+.cert-right-block {
+    position: relative;
+    width: 1110px;
+}
+
+.cert-swiper {
+    height: 100%;
+    width: 900px;
+}
+
+.swiper-slide {
+    height: 400px;
+}
+
+.swiper-pagination {
+    margin-top: 33px;
+    position: static;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(228, 45, 36, 1);
+}
+
+.cert-button-next,
+.cert-button-prev {
+    position: absolute;
+    z-index: 5;
+    top: 205px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cert-button-next {
+    right: 0;
+}
+
+.cert-button-prev {
+    left: 0;
+}
+
+.cert-button-next svg path,
+.cert-button-prev svg path {
+    transition: .3s ease;
+}
+
+.cert-button-next:hover svg path,
+.cert-button-prev:hover svg path {
+    stroke: rgba(228, 45, 36, 1);
+}
+
+
 
 
 
