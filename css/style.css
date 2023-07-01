@@ -530,6 +530,148 @@ li a {
     stroke: rgba(228, 45, 36, 1);
 }
 
+/* Production */
+.production-video {
+    background: #F9F9F9;
+    height: 897px;
+    padding: 100px 0;
+}
+
+.production-video img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* delivery */
+.delivery-table {
+    margin-top: 40px;
+    width: 898px;
+    border-spacing: 0;
+}
+
+th, td {
+    height: 60px;
+    padding-left: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+th {
+    color: #ffffff;
+    background: #E3000F;
+    border-right: 1px solid #fff;
+}
+
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    background: #F4F4F4;
+    border-right: 1px solid #D9D9D9;
+    color: #000;
+    position: relative;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+.td-border {
+    border-right: 1px solid #D9D9D9 !important;
+}
+
+.price {
+    width: 351px;
+    border-radius: 4px 0px 0px 0px;
+}
+.weight {
+    width: 390px;
+}
+.car {
+    border-radius: 0px 4px 0px 0px;
+}
+
+.td-rowspan {
+    height: 120px;
+}
+
+.price-item {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 280px;
+
+}
+
+.tr-darkgray td {
+    background: #E6E6E6;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 4px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0px 0px 4px 0px;
+}
+
+.page-text-region {
+    margin-top: 110px;
+}
+
+.page-descr-top {
+    margin-top: 30px;
+}
+
+.page-descr-bottom {
+    margin-top: 0;
+}
+
+.delivery-list {
+    margin: 40px 0;
+    max-width: 647px;
+}
+
+.delivery-list-title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30.47px;
+}
+
+.delivery-list-items {
+    margin-top: 20px;
+}
+
+.delivery-list-item {
+    position: relative;
+    list-style-type: none;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30.47px;
+    margin-left: 18px;
+}
+
+.delivery-list-item:first-child {
+    margin-top: 0;
+}
+
+.delivery-list-item::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #000;
+    left: -18px;
+}
+
+
 
 
 
