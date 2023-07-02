@@ -85,20 +85,20 @@
                 </div>
             </div>
         </div>
-        <div class="tab-items-block">
+        <div class="catalog-tab-items-block">
             <div class="container">
-                <div class="tab-items-block-wrapper">
-                    <div class="tab-item">Промежуточные реле 220 В</div>
-                    <div class="tab-item">Промежуточные реле 24 В</div>
-                    <div class="tab-item">Силовые реле</div>
-                    <div class="tab-item">Электромагнитные реле</div>
-                    <div class="tab-item">Реле 30А</div>
-                    <div class="tab-item">Реле времени</div>
-                    <div class="tab-item">Розетка</div>
-                    <div class="tab-item">Маркировочная пластина</div>
-                    <div class="tab-item">RC фильтр</div>
-                    <div class="tab-item">Индикатор </div>
-                    <div class="tab-item">Шина</div>
+                <div class="catalog-tab-items-block-wrapper">
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-1">Промежуточные реле 220 В</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-2">Промежуточные реле 24 В</div>
+                    <div class="catalog-tab-item catalog-tab-item-active" data-tab="#catalog-tab-3">Силовые реле</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-4">Электромагнитные реле</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-5">Реле 30А</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-6">Реле времени</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-7">Розетка</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-8">Маркировочная пластина</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-9">RC фильтр</div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-10">Индикатор </div>
+                    <div class="catalog-tab-item" data-tab="#catalog-tab-11">Шина</div>
                 </div>
             </div>
         </div>
@@ -109,10 +109,65 @@
             <div class="catalog-wrapper">
                 <div class="catalog-left-block">
                     <div class="catalog-left-title">силовые реле</div>
+                    <div class="filters-block">
+                        <div class="filters-item">
+                            <div class="filters-name">
+                                <div class="filters-name-title">Цена</div>
+                                <div class="filters-name-img">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="filters-inputs">
+                                <div class="filters-price-block">
+                                    <div class="filters-price-title">от</div>
+                                    <input class="filters-price-input" type="text" value="630">
+                                </div>
+                                <div class="filters-price-block">
+                                    <div class="filters-price-title">до</div>
+                                    <input class="filters-price-input" type="text" value="630" id="filterPriceMax">
+                                </div>
+                            </div>
+                            <div class="filter-line-wrapper">
+                                <input class="filter-line" type="range" min="100" max="10000" value="630">
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <div class="filters-name">
+                                <div class="filters-name-title">Количество контактов</div>
+                                <div class="filters-name-img">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <div class="filters-name">
+                                <div class="filters-name-title">Ток</div>
+                                <div class="filters-name-img">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filters-item">
+                            <div class="filters-name">
+                                <div class="filters-name-title">Напряжение управления</div>
+                                <div class="filters-name-img">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="catalog-right-block">
                     <h2 class="page-title">Каталог</h2>
-                    <div class="product-cards">
+                    <div class="product-cards product-cards-active" id="catalog-tab-1">
                         <div class="product-card">
                             <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
                             <div class="product-card-wrapper">
@@ -157,6 +212,2465 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-2">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-3">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-4">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-5">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-6">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-7">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-8">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-9">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-10">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cards" id="catalog-tab-11">
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <a class="product-card-link" href="#">Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</a>
+                            <div class="product-card-wrapper">
+                                <div class="product-card-image">
+                                    <img src="img/product/product.png" alt="">
+                                </div>
+                                <div class="product-info-block">
+                                    <div class="product-info-up">
+                                        <div class="product-character">
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Количество контактов:</div>
+                                                <div class="product-character-value">1</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Ток:</div>
+                                                <div class="product-character-value">30 А</div>
+                                            </div>
+                                            <div class="product-character-item">
+                                                <div class="product-character-name">Направление управления:</div>
+                                                <div class="product-character-value">220 В</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-buy">
+                                            <div class="product-buy-price"><b>630</b> руб. / шт.</div>
+                                            <div class="product-add-block">
+                                                <div class="product-buy-presence">Есть в наличии</div>
+                                                <button class="product-add">
+                                                    <div class="product-add-text">В корзину</div>
+                                                    <div class="product-add-img">
+                                                        <img src="img/product/basket.svg" alt="">
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info-down">
+                                        Shenler RGF1BDL 220VAC 30A 1 СО — миниатюрный размер, мощная
+                                        коммутационная способность, высокая чувствительность.
+                                        Реле имеет широкий диапазон вариантов и доступных опций.
+                                        1 контакт с нагрузкой 30 А, переменный ток с напряжением
+                                        управления 220 В
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-more">
+                        <div class="catalog-more-text">Показать больше</div>
+                        <div class="catalog-more-img">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
                         </div>
                     </div>
                 </div>
