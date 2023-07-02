@@ -139,6 +139,14 @@ img {
     align-items: end;
 }
 
+.header-social svg path {
+    transition: .3s ease;
+}
+
+.header-social a:hover svg path {
+    fill: rgba(228, 45, 36, 1);
+}
+
 /* Footer */
 .footer {
     height: 880px;
