@@ -68,11 +68,35 @@ const changePrice = () => {
     }
 }
 
+const dropFilters = () => {
+    const filterPuncts = document.querySelectorAll('.filters-puncts'),
+        triggerBtn = document.querySelectorAll('.filters-name-img')
+
+    triggerBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            let tabId = item.getAttribute('data-puncts')
+            let currentContent = document.querySelector(tabId)
+
+            currentContent.classList.toggle('filters-puncts-active')
+        })
+    })
+}
+
+const compatibleSwiper = new Swiper('.compatible-swiper', {
+    navigation: {
+        nextEl: '.compatible-button-next',
+        prevEl: '.compatible-button-prev'
+    },
+    slidesPerView: 4,
+    spaceBetween: 26,
+})
+
 dropDownMenu()
 selectDropItem()
 showMore()
 catalogTabs()
 changePrice()
+dropFilters()
 
 // const certSwiper = new Swiper('.cert-swiper', {
 //     navigation: {

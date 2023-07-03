@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -113,53 +114,173 @@
                         <div class="filters-item">
                             <div class="filters-name">
                                 <div class="filters-name-title">Цена</div>
-                                <div class="filters-name-img">
+                                <div class="filters-name-img" data-puncts="#puncts-block-1">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
                             </div>
-                            <div class="filters-inputs">
-                                <div class="filters-price-block">
-                                    <div class="filters-price-title">от</div>
-                                    <input class="filters-price-input" type="text" value="630">
+                            <div class="filters-puncts" id="puncts-block-1">
+                                <div class="filters-inputs">
+                                    <div class="filters-price-block">
+                                        <div class="filters-price-title">от</div>
+                                        <input class="filters-price-input" type="text" value="630">
+                                    </div>
+                                    <div class="filters-price-block">
+                                        <div class="filters-price-title">до</div>
+                                        <input class="filters-price-input" type="text" value="630" id="filterPriceMax">
+                                    </div>
                                 </div>
-                                <div class="filters-price-block">
-                                    <div class="filters-price-title">до</div>
-                                    <input class="filters-price-input" type="text" value="630" id="filterPriceMax">
+                                <div class="filter-line-wrapper">
+                                    <input class="filter-line" type="range" min="100" max="10000" value="630">
                                 </div>
-                            </div>
-                            <div class="filter-line-wrapper">
-                                <input class="filter-line" type="range" min="100" max="10000" value="630">
                             </div>
                         </div>
                         <div class="filters-item">
                             <div class="filters-name">
                                 <div class="filters-name-title">Количество контактов</div>
-                                <div class="filters-name-img">
+                                <div class="filters-name-img" data-puncts="#puncts-block-2">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>  
+                                </div>
+                            </div>
+                            <div class="filters-puncts" id="puncts-block-2">
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="contacts-1">
+                                        <label class="check-label" for="contacts-1"></label>
+                                    </div>
+                                    <div class="check-text">1</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="contacts-2">
+                                        <label class="check-label" for="contacts-2"></label>
+                                    </div>
+                                    <div class="check-text">2</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="contacts-3">
+                                        <label class="check-label" for="contacts-3"></label>
+                                    </div>
+                                    <div class="check-text">3</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="contacts-4">
+                                        <label class="check-label" for="contacts-4"></label>
+                                    </div>
+                                    <div class="check-text">4</div>
                                 </div>
                             </div>
                         </div>
                         <div class="filters-item">
                             <div class="filters-name">
                                 <div class="filters-name-title">Ток</div>
-                                <div class="filters-name-img">
+                                <div class="filters-name-img" data-puncts="#puncts-block-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>  
+                                </div>
+                            </div>
+                            <div class="filters-puncts" id="puncts-block-3">
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-1">
+                                        <label class="check-label" for="current-1"></label>
+                                    </div>
+                                    <div class="check-text">5А</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-2">
+                                        <label class="check-label" for="current-2"></label>
+                                    </div>
+                                    <div class="check-text">6А</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-3">
+                                        <label class="check-label" for="current-3"></label>
+                                    </div>
+                                    <div class="check-text">7A</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-4">
+                                        <label class="check-label" for="current-4"></label>
+                                    </div>
+                                    <div class="check-text">8A</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-5">
+                                        <label class="check-label" for="current-5"></label>
+                                    </div>
+                                    <div class="check-text">10A</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-6">
+                                        <label class="check-label" for="current-6"></label>
+                                    </div>
+                                    <div class="check-text">12A</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-7">
+                                        <label class="check-label" for="current-7"></label>
+                                    </div>
+                                    <div class="check-text">25A</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="current-8">
+                                        <label class="check-label" for="current-8"></label>
+                                    </div>
+                                    <div class="check-text">30A</div>
                                 </div>
                             </div>
                         </div>
                         <div class="filters-item">
                             <div class="filters-name">
                                 <div class="filters-name-title">Напряжение управления</div>
-                                <div class="filters-name-img">
+                                <div class="filters-name-img" data-puncts="#puncts-block-4">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10 15L20 25L30 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>  
+                                </div>
+                            </div>
+                            <div class="filters-puncts" id="puncts-block-4">
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="voltage-1">
+                                        <label class="check-label" for="voltage-1"></label>
+                                    </div>
+                                    <div class="check-text">12B</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="voltage-2">
+                                        <label class="check-label" for="voltage-2"></label>
+                                    </div>
+                                    <div class="check-text">24B</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="voltage-3">
+                                        <label class="check-label" for="voltage-3"></label>
+                                    </div>
+                                    <div class="check-text">220B</div>
+                                </div>
+                                <div class="check-block">
+                                    <div class="check-box">
+                                        <input class="check-input" type="checkbox" id="voltage-4">
+                                        <label class="check-label" for="voltage-4"></label>
+                                    </div>
+                                    <div class="check-text">60B</div>
                                 </div>
                             </div>
                         </div>
@@ -2678,6 +2799,110 @@
         </div>
     </div>
 
+    <div class="compatible">
+        <div class="container">
+            <div class="compatible-wrapper">
+                <h2 class="page-title">Совместимое оборудование</h2>
+                <div class="swiper-block-wrapper">
+                    <div class="swiper mySwiper compatible-swiper">
+                        <div class="swiper-wrapper compatible-swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="slide-img" src="img/compatible/product.svg" alt="product img">
+                                <a class="slide-link" href="#">
+                                    <div>Промежуточное реле Shenler RGF1BDL 220VAC 30A 1 СО</div>
+                                </a>
+                                <div class="product-buy-price slide-price"><b>630</b> руб. / шт.</div>
+                                <button class="product-add slide-add">
+                                    <div class="product-add-text">В корзину</div>
+                                    <div class="product-add-img">
+                                        <img src="img/product/basket.svg" alt="">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-next compatible-button-next">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 30L25 20L15 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="swiper-prev compatible-button-prev">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="chevron-left">
+                                <path id="Vector" d="M25 30L15 20L25 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
@@ -2756,6 +2981,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
