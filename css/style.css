@@ -566,25 +566,25 @@ th, td {
     line-height: 23.44px;
 }
 
-th {
+.delivery-table th {
     color: #ffffff;
     background: #E3000F;
     border-right: 1px solid #fff;
 }
 
 
-th:last-child {
+.delivery-table th:last-child {
     border-right: none;
 }
 
-td {
+.delivery-table td {
     background: #F4F4F4;
     border-right: 1px solid #D9D9D9;
     color: #000;
     position: relative;
 }
 
-td:last-child {
+.delivery-table td:last-child {
     border-right: none;
 }
 
@@ -619,11 +619,11 @@ td:last-child {
     background: #E6E6E6;
 }
 
-tr:last-child td:first-child {
+.delivery-table tr:last-child td:first-child {
     border-radius: 0px 0px 0px 4px;
 }
 
-tr:last-child td:last-child {
+.delivery-table tr:last-child td:last-child {
     border-radius: 0px 0px 4px 0px;
 }
 
@@ -1002,7 +1002,7 @@ tr:last-child td:last-child {
 }
 
 .product-character-item:first-child {
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .product-character-name {
@@ -1300,6 +1300,353 @@ tr:last-child td:last-child {
     margin: 0 auto;
     margin-top: 30px;
 }
+
+/* Card */
+
+.card-title {
+    font-weight: 500;
+    margin-top: 70px;
+}
+
+.card-tab-block {
+    max-width: 1628px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-tab-item {
+    font-weight: 400;
+    font-size: 26px;
+    color: #7E7E7E;
+    cursor: pointer;
+    text-decoration: none;
+    height: 40px;
+}
+
+.card-tab-item:hover {
+    color: #000;
+    border-bottom: 5px solid #E42D24;
+}
+
+.card-wrapper {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-block {
+    max-width: 1065px;
+    height: 364px;
+    border-bottom: 4px solid #F9F9F9;
+}
+
+.product-card-wrapper-2 {
+    align-items: start;
+}
+
+.card-descr {
+    margin-top: 55px;
+    max-width: 735px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+.card-detail-button {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-detail-button-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+.card-detail-button--link {
+    height: 29px;
+    cursor: pointer;
+}
+
+.card-image {
+    height: 270px;
+    width: 270px;
+}
+
+.card-add-block-1, .card-add-block-2 {
+    width: 560px;
+    padding: 51px 55px 50px 55px;
+    background: #F9F9F9;
+}
+
+.card-add-block-1 {
+    border-radius: 6px 6px 0 0;
+}
+
+.card-add-block-2 {
+    border-radius: 0 0 6px 6px;
+}
+
+.card-add-block-2 {
+    margin-top: 4px;
+}
+
+.card-add-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-add-line:nth-child(2) {
+    margin-top: 30px;
+}
+
+.card-add-button {
+    margin-top: 0;
+}
+
+.card-add-presence {
+    margin-left: 30px;
+}
+
+.input-block {
+    width: 187px;
+    height: 50px;
+    position: relative;
+}
+
+.input-block input {
+    width: 187px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #7E7E7E;
+    background: #FFF;
+    outline: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 40px;
+    text-align: center;
+    color: #7E7E7E;
+}
+
+.input-plus,
+.input-minus {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+
+.input-plus img,
+.input-minus img {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-plus {
+    right: 15px;
+}
+
+.input-minus {
+    left: 15px;
+}
+
+.card-add-article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-add-article-text {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 23.44px;
+}
+
+.cart-add-article-img, .card-add-article-link {
+    height: 24px;
+}
+
+.card-details {
+    margin-top: 66px;
+}
+
+.card-detail-item {
+    margin-top: 62px;
+}
+
+.card-detail-item:first-child {
+    margin-top: 0;
+}
+
+.card-detail-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: #E42D24;
+}
+
+.title-black {
+    font-size: 30px;
+    line-height: 35.16px;
+    color: #000;
+}
+
+.card-detail-text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    max-width: 1021px;
+}
+
+.card-detail-list {
+    margin-top: 20px;
+}
+
+.card-detail-list-item {
+    list-style-type: none;
+    position: relative;
+    margin-left: 16px;
+}
+
+.style-type-none::before {
+    display: none;
+}
+
+.card-detail-list-item::before {
+    position: absolute;
+    top: 4px;
+    left: -16px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #E42D24;
+}
+
+.card-detail-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+li.card-detail-text {
+    margin-top: 12px;
+}
+
+li.card-detail-text:first-child {
+    margin-top: 0;
+}
+
+.style-type::before {
+    top: 8px;
+}
+
+.character-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.character-table.first {
+    margin-top: 20px;
+}
+
+.character-table th, .character-table td {
+    font-weight: 400;
+    background-color: #F4F4F4;
+    padding-left: 22px;
+}
+
+th.up-1{
+    width: 173px;
+}
+
+th.up-2 {
+    width: 767px;
+}
+
+th.up-3 {
+    width: 380px;
+}
+
+th.up-4 {
+    width: 380px;
+}
+
+.dark-gray {
+    background-color: #E6E6E6 !important;
+}
+
+.td-mini {
+    width: 249px;
+}
+
+.first-th {
+    width: 940px;
+}
+
+th.down-1 {
+    width: 940px;
+}
+
+.td-1 {
+    width: 380px;
+}
+
+.row-1 {
+    width: 940px;
+}
+
+.td-height {
+    padding-top: 19px;
+    height: 85px;
+    vertical-align: top;
+}
+
+.documentation-wrapper {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.documentation-item {
+    display: flex;
+    align-items: center;
+    gap: 28.84px;
+}
+
+.documentation-item-link {
+    height: 94px;
+    cursor: pointer;
+}
+
+.documentation-item-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.button-email.button-product-card {
+    top: 2059px;
+}
+
+.button-phone.button-product-card {
+    top: 2179px;
+}
+
+
+
+
 
 
 

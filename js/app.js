@@ -82,21 +82,38 @@ const dropFilters = () => {
     })
 }
 
-const compatibleSwiper = new Swiper('.compatible-swiper', {
-    navigation: {
-        nextEl: '.compatible-button-next',
-        prevEl: '.compatible-button-prev'
-    },
-    slidesPerView: 4,
-    spaceBetween: 26,
-})
+// const compatibleSwiper = new Swiper('.compatible-swiper', {
+//     navigation: {
+//         nextEl: '.compatible-button-next',
+//         prevEl: '.compatible-button-prev'
+//     },
+//     slidesPerView: 4,
+//     spaceBetween: 26,
+// })
 
-dropDownMenu()
-selectDropItem()
-showMore()
-catalogTabs()
-changePrice()
-dropFilters()
+const changeInputValue = () => {
+    const inputPlus = document.querySelector('.input-plus'),
+        inputMinus = document.querySelector('.input-minus'),
+        input = document.querySelector('.input-block input')
+
+    inputPlus.addEventListener('click', () => {
+        input.value ++
+    })
+
+    inputMinus.addEventListener('click', () => {
+        if (input.value >= 2) {
+            input.value --
+        }
+    })
+}
+
+// dropDownMenu()
+// selectDropItem()
+// showMore()
+// catalogTabs()
+// changePrice()
+// dropFilters()
+changeInputValue()
 
 // const certSwiper = new Swiper('.cert-swiper', {
 //     navigation: {
