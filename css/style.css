@@ -1269,7 +1269,7 @@ th, td {
     height: 561px;
 }
 
-.swiper-slide {
+.compatible-swiper .swiper-slide {
     text-align: center;
     width: 380px;
     height: 100%;
