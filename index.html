@@ -11,13 +11,8 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-title">
-            <div class="container">
-                <h4>Главная</h4>
-            </div>
-        </div>
         <div class="container">
-            <div class="header-info">
+            <div class="header-wrapper">
                 <div class="header-block">
                     <a class="header-logo" href="index.html"><img src="img/header/logo.svg" alt="logo icon"></a>
                     <div class="header-address">
@@ -63,17 +58,34 @@
                         </svg>
                     </a>
                 </div>
+                <div class="header-burger">
+                    <img src="img/burger.svg" alt="burger-icon">
+                </div>
             </div>
         </div>
     </header>
 
     <div class="main">
         <div class="container">
+            <div class="page-up-block">
+                <div class="page-search-block mobile">
+                    <input class="page-search mobile" type="text">
+                    <img class="page-search-icon mobile" src="img/page-search/search.svg" alt="">
+                </div>
+                <a class="to-catalog-button" href="catalog.html">
+                    <button class="to-catalog-button">Каталог</button>
+                </a>
+            </div>
             <h1 class="main-title">
                 СТАБИЛЬНЫЕ ПОСТАВКИ
-                КАЧЕСТВО МИРОВЫХ ЛИДЕРОВ
             </h1>
-            <input class="page-search" type="text">
+            <h2 class="main-title main-subtitle">
+                КАЧЕСТВО МИРОВЫХ ЛИДЕРОВ
+            </h2>
+            <div class="page-search-block">
+                <input class="page-search" type="text">
+                <img class="page-search-icon" src="img/page-search/search.svg" alt="">
+            </div>
             <nav class="main-nav">
                 <ul class="main-nav-list">
                     <li class="main-nav-item"><a href="about.html">о компании</a></li>
@@ -91,9 +103,9 @@
         <a class="button-right button-phone" href="#">
             <img src="img/button-phone.svg" alt="phone icon">
         </a>
-        <div class="main-subtitle">
-            <div class="main-subtitle-1">МЫ УВЕРЕНЫ В КАЧЕСТВЕ</div>
-            <div class="main-subtitle-2">ПРЕДОСТАВЛЯЕМ ОБРАЗЦЫ БЕСПЛАТНО</div>
+        <div class="main-descr">
+            <div class="main-descr-1">МЫ УВЕРЕНЫ В КАЧЕСТВЕ</div>
+            <div class="main-descr-2">ПРЕДОСТАВЛЯЕМ ОБРАЗЦЫ БЕСПЛАТНО</div>
         </div>
     </div>
 
@@ -197,5 +209,25 @@
             </div>
         </div>
     </footer>
+    <div class="footer-mobile-form">
+        <div class="container">
+           <div class="wrapper">
+                <div class="form-info-title">
+                    Получите прайс-лист на продукцию SHENLER
+                </div>
+                <div class="form-info-descr">
+                    Заполните форму, и мы вышлем
+                    <span>всю необходимую информацию</span>
+                    вам на почту или Whatsapp
+                </div>
+                <form class="feed-form" action="#">
+                    <input type="text" required="required" placeholder="Ваше имя*">
+                    <input type="tel" required="required" placeholder="Телефон*">
+                    <input type="email" required="required" placeholder="Эл. почта*">
+                    <button class="button-submit">Отправить</button>
+                </form>
+           </div>
+        </div>
+    </div>
 </body>
 </html>

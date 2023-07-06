@@ -13,3 +13,5 @@ const changeInputValue = () => {
         }
     })
 }
+
+changeInputValue()
