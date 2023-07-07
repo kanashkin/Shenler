@@ -1652,7 +1652,7 @@ th.down-1 {
         content: 'width=device-width';
     }
     .container {
-        max-width: 450px;
+        max-width: 320px;
         padding: 0 10px;
     }
     .header {
@@ -1738,10 +1738,10 @@ th.down-1 {
         right: 10px;
     }
     .button-email {
-        top: 220px;
+        top: 309px;
     }
     .button-phone {
-        top: 295px;
+        top: 384px;
     }
     .main-descr {
         bottom: 36px;
@@ -1851,6 +1851,43 @@ th.down-1 {
         width: 272px;
         height: 50px;
         font-size: 18px;
+    }
+    .footer-dop-img {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+    .footer-mobile.index {
+        padding-bottom: 10px;
+    }
+    .footer-mobile.index .footer-button {
+        margin-top: 50px;
+    }
+    .footer-mobile.index .footer-button {
+        margin-top: 70px;
+    }
+    .footer-mobile-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    .footer-dop-button-block {
+        display: block;
+        width: 50%;
+    }
+    .footer-dop-button-block:first-child {
+        margin-bottom: 0;
+    }
+    .footer-dop-button {
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+    }
+    .footer-dop-title {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 18.75px;
     }
 }
 
