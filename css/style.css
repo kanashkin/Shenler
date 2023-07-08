@@ -1658,13 +1658,18 @@ th.down-1 {
 
 @media (max-width: 320px) {
     .delivery .container,
-    .articles .container {
+    .articles .container,
+    .contacts .container {
         padding: 0;
     }
     .delivery .page-up-block,
     .articles .page-up-block,
-    .delivery .page-right-block .delivery-title,
-    .articles .page-right-block .articles-title,
+    .contacts .page-up-block,
+    .delivery-title,
+    .articles-title,
+    .contacts-title,
+    .contacts-page-descr,
+    .contacts-address,
     .page-text-region {
         padding-left: 10px;
         padding-right: 10px;
@@ -2158,6 +2163,17 @@ th.down-1 {
     }
     .articles-control-block {
         margin-top: 50px;
+    }
+    .contacts-map iframe {
+        width: 320px;
+        height: 320px;
+    }
+    .page-text-block-mini {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .contacts-map:last-child {
+        margin-top: 30px;
     }
 }
 
