@@ -1896,16 +1896,17 @@ th.down-1 {
     .mobile-menu {
         display: block;
         position: absolute;
-        top: -150%;
+        top: -120%;
         z-index: 100;
         height: 568px;
         width: 100%;
         background: #fff;
         padding: 39px 24px 30px 24px;
-        transition: .6s all;
+        transition: .3s all;
     }
     .mobile-menu-active {
         top: 0;
+        transition: .6s all;
     }
     .main-nav.mobile {
         display: block;
@@ -2059,6 +2060,17 @@ th.down-1 {
         font-size: 15px;
         line-height: 17.58px;
         margin-top: 30px;
+    }
+    .production {
+        padding-bottom: 50px;
+    }
+    .production-video {
+        padding: 0;
+        height: 322px;
+        border-bottom: 1px solid #fff;
+    }
+    .production-video img {
+        height: 320px;
     }
 }
 
