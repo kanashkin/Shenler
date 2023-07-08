@@ -23,6 +23,10 @@ img {
 }
 
 /* Common */
+.new-line {
+    display: none;
+}
+
 .page-up-block {
     display: none;
 }
@@ -1987,7 +1991,7 @@ th.down-1 {
         margin-top: 0;
     }
     .promo {
-        padding-top: 20px;
+        padding: 20px 0 50px 0;
     }
     .promo .button-email {
         top: 433px;
@@ -2061,9 +2065,6 @@ th.down-1 {
         line-height: 17.58px;
         margin-top: 30px;
     }
-    .production {
-        padding-bottom: 50px;
-    }
     .production-video {
         padding: 0;
         height: 322px;
@@ -2071,6 +2072,72 @@ th.down-1 {
     }
     .production-video img {
         height: 320px;
+    }
+    .new-line {
+        display: block;
+    }
+    .delivery .container {
+        padding: 0;
+    }
+    .delivery .page-up-block,
+    .delivery .page-right-block .moscow-title,
+    .page-text-region {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .delivery-table {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .delivery-table th,
+    .delivery-table td {
+        padding-left: 10px;
+        height: 30px;
+        font-size: 8px;
+        line-height: 9.38px;
+    }
+    .price {
+        width: 98px;
+        padding-right: 15px;
+    }
+    .weight {
+        width: 144px;
+    }
+    .car {
+        width: 76px;
+    }
+    .price-item {
+        left: 106px;
+    }
+    .delivery-table .td-rowspan {
+        height: 44px;
+    }
+    .delivery-table .td-in-rowspan {
+        height: 22px;
+    }
+    .page-text-region {
+        margin-top: 30px;
+    }
+    .delivery-table tr td:first-child {
+        padding-right: 13px;
+    }
+    .delivery-list {
+        margin: 20px 0;
+    }
+    .delivery-list-title, .delivery-list-item {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    .delivery-list-items {
+        margin-top: 10px;
+    }
+    .delivery-list-item::before {
+        width: 3px;
+        height: 3px;
+        top: 7px;
+    }
+    .page-descr-bottom {
+        margin-top: 0;
     }
 }
 
