@@ -1657,8 +1657,17 @@ th.down-1 {
 }
 
 @media (max-width: 320px) {
-    .meta {
-        content: 'width=device-width';
+    .delivery .container,
+    .articles .container {
+        padding: 0;
+    }
+    .delivery .page-up-block,
+    .articles .page-up-block,
+    .delivery .page-right-block .delivery-title,
+    .articles .page-right-block .articles-title,
+    .page-text-region {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .container {
         max-width: 320px;
@@ -2076,15 +2085,6 @@ th.down-1 {
     .new-line {
         display: block;
     }
-    .delivery .container {
-        padding: 0;
-    }
-    .delivery .page-up-block,
-    .delivery .page-right-block .moscow-title,
-    .page-text-region {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     .delivery-table {
         margin-top: 20px;
         width: 100%;
@@ -2138,6 +2138,26 @@ th.down-1 {
     }
     .page-descr-bottom {
         margin-top: 0;
+    }
+    .articles-blocks {
+        width: 100%;
+        margin-top: 18px;
+    }
+    .article-block {
+        padding: 0 0 0 10px;
+        border-radius: 0;
+    }
+    .article-block-text {
+        font-size: 16px;
+        line-height: 18.75px;
+        max-width: 280px;
+    }
+    .article-block-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .articles-control-block {
+        margin-top: 50px;
     }
 }
 
