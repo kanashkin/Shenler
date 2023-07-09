@@ -2460,6 +2460,203 @@ th.down-1 {
     .compatible .swiper-pagination {
         display: block;
     }
+    .card-tab-block, .card-details {
+        display: none;
+    }
+    .card-wrapper {
+        display: block;
+        margin-top: 30px;
+    }
+    .card-block {
+        border-bottom: none;
+    }
+    .card-image {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+    }
+    .card-descr {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 16.41px;
+    }
+    .card-detail-button {
+        display: none;
+    }
+    .card-add-blocks {
+        margin-top: 60px;
+    }
+    .card-add-block-1, .card-add-block-2 {
+        width: 100%;
+        background: none;
+        padding: 0;
+        text-align: center;
+    }
+    .card-add-block-2 {
+        margin-top: 64px;
+    }
+    .card-add-line {
+        display: block;
+    }
+    .card-add-presence {
+        display: none;
+    }
+    .card-add-presence.mobile {
+        display: block;
+    }
+    .product-buy-price {
+        line-height: normal;
+        font-size: 16px;
+    }
+    .product-buy-price b {
+        line-height: 41.09px;
+    }
+    .input-block {
+        margin: 0 auto;
+        margin-top: 42px;
+    }
+    .card-add-article {
+        justify-content: space-between;
+        gap: 0;
+        margin-left: 70px;
+    }
+    .card-add-article:first-child {
+        width: 160px;
+    }
+    .card-add-article:last-child {
+        margin-top: 33px;
+        width: 154px;
+    }
+    .card-add-article-text {
+        font-size: 16px;
+    }
+    .accordion {
+        margin-top: 62px;
+    }
+    .accordion-item {
+        margin-top: 5px;
+    }
+    .accordion-item-up {
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+        height: 50px;
+        border-radius: 4px;
+        background: #F4F4F4;
+    }
+    .accordion-item-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    .accordion-info {
+        margin-top: 30px;
+        display: none;
+    }
+    .accordion-item-active {
+        margin-bottom: 30px;
+    }
+    .accordion-item-active:last-child {
+        margin-bottom: 0;
+    }
+    .accordion-item-active.table-item {
+        margin-bottom: 50px;
+    }
+    .accordion-item-active .accordion-item-up {
+        background: #E42D24;
+    }
+    .accordion-item-active .accordion-info {
+        display: block;
+    }
+    .accordion-item-active .accordion-item-name {
+        color: #fff;
+    }
+    .accordion-item-active .accordion-item-open {
+        transform: rotate(-180deg);
+    }
+    .accordion-item-active .accordion-item-open svg path {
+        stroke: #fff;
+    }
+    .accordion .card-detail-list {
+        margin-top: 0;
+    }
+    .card-detail-text {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    .card-detail-list-item::before {
+        top: 5px;
+    }
+    .accordion-info .page-descr {
+        margin-top: 30px;
+    }
+    .table-info {
+        margin-top: 42px;
+    }
+    .table-wrapper {
+        padding-bottom: 30px;
+        overflow-x: scroll;
+    }
+    .table-wrapper::-webkit-scrollbar {
+        overflow-x: scroll;
+        height: 4px;
+        width: 100%;
+        background: #E6E6E6;
+        border-radius: 20px;
+    }
+    .table-wrapper::-webkit-scrollbar-thumb {
+        background-image: url('../img/scroll-thumb.svg');
+        background-repeat: no-repeat;
+        background-size: 50px 4px;
+    }
+    .character-table {
+        width: 972.894px;
+    }
+    .character-table.first {
+        margin-top: 0;
+    }
+    th, td {
+        height: 42px;
+        font-size: 14px;
+        line-height: 16.41px;
+    }
+    th.up-1 {
+        width: 121px;
+    }
+    th.up-2 {
+        width: 319px;
+    }
+    .character-table th, .character-table td {
+        padding-left: 15px;
+        white-space: nowrap;
+    }
+    .documentation-info {
+        margin-top: 38px;
+    }
+    .documentation-item-link {
+        width: 36.211px;
+        height: 43px;
+    }
+    .documentation-item-name {
+        font-size: 14px;
+        line-height: 16.41px;
+    }
+    .info-for-order {
+        margin-top: 50px;
+    }
+    .card-detail-title {
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+    .card-detail-list-title {
+        font-size: 16px;
+        line-height: 18.75px;
+    }
+    li.card-detail-text {
+        margin-top: 10px;
+    }
     
 }
 
