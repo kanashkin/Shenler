@@ -1,6 +1,6 @@
-const catalogTabs = () => {
-    const tabBtns = document.querySelectorAll('.catalog-tab-item'),
-        tabsContent = document.querySelectorAll('.product-cards')
+const catalogTabs = (tabSelector, contentSelector, tabActiveSelector, contentActiveSelector) => {
+    const tabBtns = document.querySelectorAll(tabSelector),
+        tabsContent = document.querySelectorAll(contentSelector)
 
     tabBtns.forEach(item => {
         item.addEventListener('click', () => {
@@ -9,16 +9,17 @@ const catalogTabs = () => {
             let currentContent = document.querySelector(tabId)
 
             tabBtns.forEach(item => {
-                item.classList.remove('catalog-tab-item-active')
+                item.classList.remove(tabActiveSelector)
             })
             tabsContent.forEach(item => {
-                item.classList.remove('product-cards-active')
+                item.classList.remove(contentActiveSelector)
             })
 
-            currentBtn.classList.add('catalog-tab-item-active')
-            currentContent.classList.add('product-cards-active')
+            currentBtn.classList.add(tabActiveSelector)
+            currentContent.classList.add(contentActiveSelector)
         })
     })
 }
 
-catalogTabs()
+catalogTabs('.catalog-tab-item', '.product-cards', 'catalog-tab-item-active', 'product-cards-active')
+catalogTabs('.catalog-tabs-mobile-list .catalog-tab-mobile', '.product-cards', 'active', 'product-cards-active')

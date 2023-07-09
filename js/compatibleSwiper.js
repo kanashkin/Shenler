@@ -1,8 +1,19 @@
 const compatibleSwiper = new Swiper('.compatible-swiper', {
-    navigation: {
-        nextEl: '.compatible-button-next',
-        prevEl: '.compatible-button-prev'
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
     },
-    slidesPerView: 4,
-    spaceBetween: 26,
+    breakpoints: {
+        320: {
+            navigation: false,
+            slidesPerView: 1,
+        },
+        451: {
+            navigation: {
+                nextEl: '.compatible-button-next',
+                prevEl: '.compatible-button-prev'
+            },
+            slidesPerView: 4,
+        }
+    }
 })
