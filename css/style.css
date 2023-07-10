@@ -1462,6 +1462,10 @@ th, td {
     margin-left: 30px;
 }
 
+.card-add-presence.mobile {
+    display: none;
+}
+
 .input-block {
     width: 187px;
     height: 50px;
@@ -1531,6 +1535,10 @@ th, td {
 
 .card-detail-item {
     margin-top: 62px;
+}
+
+.accordion, .info-for-order {
+    display: none;
 }
 
 .card-detail-item:first-child {
@@ -2531,6 +2539,7 @@ th.down-1 {
         font-size: 16px;
     }
     .accordion {
+        display: block;
         margin-top: 62px;
     }
     .accordion-item {
@@ -2644,6 +2653,7 @@ th.down-1 {
         line-height: 16.41px;
     }
     .info-for-order {
+        display: block;
         margin-top: 50px;
     }
     .card-detail-title {

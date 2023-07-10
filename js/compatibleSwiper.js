@@ -14,6 +14,7 @@ const compatibleSwiper = new Swiper('.compatible-swiper', {
                 prevEl: '.compatible-button-prev'
             },
             slidesPerView: 4,
+            spaceBetween: 26
         }
     }
 })
